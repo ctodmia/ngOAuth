@@ -1,12 +1,12 @@
 {
-  "name": "testapp",
-  "description": "",
+  "name": "ngoauth",
+  "description": "angular oauth example",
   "main": "app.js",
   "authors": [
-    "MagCacti"
+    "Carine Todmia"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/MagCacti/testapp",
+  "homepage": "http://github.com/ctodmia/ngOAuth",
   "moduleType": [],
   "ignore": [
     "**/.*",
@@ -19,5 +19,12 @@
     "ace-builds": "~1.2.2",
     "angular": "~1.4.8",
     "angular-ui-ace": "~0.2.3"
-  }
+  },
+  "keywords": [
+    "angularjs",
+    "oauth",
+    "angular",
+    "authentication"
+  ],
+  "private": true
 }
