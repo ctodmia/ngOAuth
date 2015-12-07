@@ -20,6 +20,16 @@ angular.module('myapp', [
 			templateUrl: 'profile/profileView.html',
 			controller: 'ProfileController as profile'
 			})
+			.state('login', {
+				url: '/login',
+				templateUrl: 'login/loginView.html',
+				controller: 'LoginController as login'
+			})
+			.state('logout', {
+				url: '/logout',
+				templateUrl: 'logout/logoutView.html',
+				controller: 'LogoutController as logout'
+			})
 })
 
 .service('greeting', function Greeting() {
@@ -41,4 +51,13 @@ angular.module('myapp', [
 
 	profile.greeting = greeting
 
+})
+
+.controller('LoginController', function LoginController(){
+	var login = this;
+	console.log('you are logged in')
+})
+.controller('LogoutController', function LogoutController(){
+	var logout = this;
+	console.log('your totally out of here')
 })
