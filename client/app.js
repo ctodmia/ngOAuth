@@ -29,10 +29,10 @@ angular.module('myapp', [
 
 })
 
-.controller('Controller', function SignupController() {
+.controller('ProfileController', function ProfileController() {
 
-	var signup = this;
+	var profile = this;
 
-	signup.greeting = "First"
+	profile.greeting = "First"
 
 })
