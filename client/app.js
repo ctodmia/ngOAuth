@@ -21,18 +21,24 @@ angular.module('myapp', [
 			controller: 'ProfileController as profile'
 			})
 })
-.controller('SignupController', function SignupController() {
+
+.service('greeting', function Greeting() {
+	var greeting = this;
+
+	greeting.message = "Default"
+})
+.controller('SignupController', function SignupController(greeting) {
 
 	var signup = this;
 
-	signup.greeting = "First"
+	signup.greeting = greeting
 
 })
 
-.controller('ProfileController', function ProfileController() {
+.controller('ProfileController', function ProfileController(greeting) {
 
 	var profile = this;
 
-	profile.greeting = "First"
+	profile.greeting = greeting
 
 })
