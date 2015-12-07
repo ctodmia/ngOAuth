@@ -23,13 +23,24 @@ angular.module('myapp', [
 			.state('login', {
 				url: '/login',
 				templateUrl: 'login/loginView.html',
-				controller: 'LoginController as login'
+				controller: 'LoginController as loggedin'
 			})
 			.state('logout', {
 				url: '/logout',
 				templateUrl: 'logout/logoutView.html',
 				controller: 'LogoutController as logout'
 			})
+	$authProvider.github({
+	  url: '/auth/github',
+	  authorizationEndpoint: 'https://github.com/login/oauth/authorize',
+	  clientId: '304203305a7274b64eda',
+	  redirectUri: window.location.origin,  
+	  optionalUrlParams: ['scope'],
+	  scope: ['user'],
+	  scopeDelimiter: ' ',
+	  type: '2.0',
+	  popupOptions: { width: 1020, height: 618 }
+	});
 })
 
 .service('greeting', function Greeting() {
@@ -53,10 +64,6 @@ angular.module('myapp', [
 
 })
 
-.controller('LoginController', function LoginController(){
-	var login = this;
-	console.log('you are logged in')
-})
 .controller('LogoutController', function LogoutController(){
 	var logout = this;
 	console.log('your totally out of here')
