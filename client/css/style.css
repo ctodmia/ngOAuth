@@ -1,0 +1,64 @@
+section#signin{
+	background-color: orange;
+}
+
+.login-needed li {
+	float: left;
+}
+
+.container.body {
+	margin-top: 50px;
+	background-size: cover;
+
+	/*height: 435px;*/
+
+}
+
+.container {
+  margin-top: 50px;
+}
+body {
+	/*height: 100%;*/
+	/*overflow: scroll;*/
+  overflow: cover;
+}
+
+.body {
+	background-size: cover;
+	/*height: 1000px;*/
+	/*overflow: none;*/
+}
+.view {
+	background-size: cover;
+}
+footer: {
+	/*position: bottom; */
+    bottom: 0px; 
+    width: 100%; 
+    height: 60px;
+    background-color: black;
+}
+
+nav {
+  background-color: #67D6E0;
+}
+
+footer.page-footer {
+  background-color: #67D6E0;
+}
+
+.btn, .btn-large {
+  background-color: #E87272;
+}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    /*overflow:/ hidden;*/
+  }
+
+  main {
+    flex: 1 0 auto;
+    /*overflow: hidden;*/
+  }
+

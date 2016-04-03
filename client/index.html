@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="homework">
+
+	<head>
+		<title>HomeworkExpress</title>
+		<!-- <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body ng-controller="NavbarController">
+		<nav class="navbar-fixed">
+			<div class="nav-wrapper">
+				<a href="#" ui-sref="home" class="brand-logo left">Simple Social Login</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+				 
+				  <li><a href="#" ui-sref="login">Login</a></li>
+				  <li><a href="#" ng-click="logout()">Logout</a></li>
+				  <li><a href="#" ui-sref="landing">About</a></li>
+				  <li><a href="#" ui-sref="home">Home</a></li>
+
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+				    <li><a href="#" ui-sref="newassignment">Add New</a></li>
+					<li><a href="#" ui-sref="assignmentlist">Assignments</a></li>
+					<li><a href="#" ui-sref="home">Login</a></li>
+					<li><a href="#" ui-sref="login">Logout</a></li>
+					<li><a href="https://github.com/ctodmia/homeworkapp" target="_blank">About</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- <p ng-show="userIn">Welcome, {{currentUser}}</p>
+		<p ng-hide="userIn">You are currently not logged in</p> -->
+
+		<!-- <main> -->
+			<main ui-view class ="view"></main>
+		<!-- </main> -->
+
+		<footer class="page-footer">
+		  <div class="footer-copyright">
+		    <div class="container">
+		    <a class="grey-text text-lighten-4 left" href="http://carinetodmia.com" target="_blank"> © 2014 Carine Todmia </a>
+		    <a class="grey-text text-lighten-4 right" href="http://twitter.com/cinfinitymedia" target="_blank">@cinfinitymedia</a>
+		    </div>
+		  </div>
+		</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/navbarController.js"></script>
+	<script src="controllers/signin.js"></script>
+	<script src="controllers/studentListController.js"></script>
+	<script src="controllers/studentController.js"></script>
+	<script src="controllers/newAssignmentController.js"></script>
+	<script src="controllers/assignmentListController.js"></script>
+	<script src="controllers/assignmentController.js"></script>
+	<script src="services/assignmentservice.js"></script>
+	<script src="services/authenticateService.js"></script>
+	<script src="services/studentService.js"></script>
+
+	</body>
+</html>
